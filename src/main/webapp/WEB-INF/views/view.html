@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Post</title>
+</head>
+<body>
+<a href="/blog">Back to Post list</a>
+<h1>Post detail</h1>
+<fieldset th:object="${blog}">
+    <legend th:text="${blog.title}" style="color: blueviolet"></legend>
+    <p th:text="${blog.content}"></p>
+</fieldset>
+</body>
+</html>
